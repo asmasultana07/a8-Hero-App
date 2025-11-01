@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+/* .navLink {
+  @apply btn btn-ghost p-1 text-lg  bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ;
+} */
+
+
+/* Image Moving */
+@keyframes moveImage {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20%); }
+  
+}
+
+@layer utilities {
+  .animate-moveImage {
+    animation: moveImage 5s ease-in-out infinite;
+  }
+}
