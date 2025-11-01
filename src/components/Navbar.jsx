@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm px-10 md:px-20">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,7 +81,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <a href="" target="_blank" 
+          <a href="https://github.com/asmasultana07" target="_blank" 
           className="rounded-md text-white text-[16px]  btn 
                                 bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:from-pink-500 hover:to-purple-500"> 
           <FaGithub />Contribute</a>

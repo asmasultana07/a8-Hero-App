@@ -9,10 +9,12 @@ body {
   font-optical-sizing: auto;
   
 }
-/* .navLink {
-  @apply btn btn-ghost p-1 text-lg  bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ;
-} */
-
+.text-bb {
+  color: #001931;
+}
+.text-pp {
+  color: #627382;
+}
 
 /* Image Moving */
 @keyframes moveImage {
