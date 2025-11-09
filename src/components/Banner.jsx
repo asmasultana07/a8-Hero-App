@@ -5,6 +5,7 @@ import heroImage from "../assets/hero.png";
 const Banner = () => {
   return (
     <section className="">
+      {/* Banner */}
       <div className="bg-[#f3f3f3] flex flex-col gap-5 px-10 md:px-20">
         <div className="mt-10 flex flex-col justify-center items-center text-center gap-6">
           <h1 className="text-4xl md:text-7xl text-bb font-bold">
@@ -47,30 +48,31 @@ const Banner = () => {
         </div>
       </div>
       {/* Trusted section */}
-      <div className="flex flex-col justify-center items-center bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
-        <h2 className="text-white text-2xl font-semibold m-8">Trusted by Millions, Built for You</h2>
+      <div className="p-10 md:p-20 flex flex-col justify-center items-center bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+        <h2 className="text-white text-xl md:text-3xl font-semibold">Trusted by Millions, Built for You</h2>
         
-          <div class="stats shadow">
-            <div class="stat place-items-center">
-              <div class="stat-title text-white">Downloads</div>
-              <div class="stat-value text-white">31K</div>
-              <div class="stat-desc text-white">From January 1st to February 1st</div>
+          <div class="md:stats shadow mt-10 gap-20">
+            <div class="stat place-items-center gap-4">
+              <div class="stat-title text-white">Total Downloads</div>
+              <div class="stat-value text-white md:text-6xl">29.6M</div>
+              <div class="stat-desc text-white">21% more than last month</div>
             </div>
 
-            <div class="stat place-items-center">
-              <div class="stat-title text-white">Users</div>
-              <div class="stat-value text-secondary text-white">4,200</div>
-              <div class="stat-desc text-secondary text-white">↗︎ 40 (2%)</div>
+            <div class="stat place-items-center gap-4">
+              <div class="stat-title text-white">Total Reviews</div>
+              <div class="stat-value text-secondary text-white md:text-6xl">906K</div>
+              <div class="stat-desc text-secondary text-white">46% more than last month</div>
             </div>
 
-            <div class="stat place-items-center">
-              <div class="stat-title text-white">New Registers</div>
-              <div class="stat-value text-white">1,200</div>
-              <div class="stat-desc text-white">↘︎ 90 (14%)</div>
+            <div class="stat place-items-center gap-4">
+              <div class="stat-title text-white">Active Apps</div>
+              <div class="stat-value text-white md:text-6xl">132+</div>
+              <div class="stat-desc text-white">31 more will Launch</div>
             </div>
           </div>
         
       </div>
+     
     </section>
   );
 };

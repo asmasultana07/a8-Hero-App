@@ -1,0 +1,363 @@
+[
+  {
+    "image": "https://i.postimg.cc/90HMv9BM/coursera-logo.png",
+    "title": "Coursera",
+    "companyName": "Coursera Inc.",
+    "id": 1,
+    "description": "Coursera is a leading online learning platform offering computer science and engineering courses from top universities and companies worldwide. Students can learn Python, Machine Learning, Data Structures, and Web Development with hands-on projects and professional certificates. The app provides a flexible learning schedule, video lectures, quizzes, and peer-reviewed assignments to help learners build real-world skills.",
+    "size": 86,
+    "reviews": "129K",
+    "ratingAvg": 4.7,
+    "downloads":"5M",
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 1170000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/NGnbrjj8/Sololearn.jpg",
+    "title": "SoloLearn",
+    "companyName": "SoloLearn Ltd.",
+    "id": 2,
+    "description": "SoloLearn provides an interactive platform to learn coding through fun, bite-sized lessons. It covers programming languages like Python, C++, Java, JavaScript, HTML, and SQL. The app’s community-driven approach lets users share code, solve challenges, and engage in discussions, making learning both engaging and social. Ideal for beginners in computer science and software development.",
+    "size": 34,
+    "reviews": "870K",
+    "ratingAvg": 4.6,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 110000 },
+      { "name": "5 star", "count": 732000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/vmzwQVMm/Udemy.png",
+    "title": "Udemy",
+    "companyName": "Udemy Inc.",
+    "id": 3,
+    "description": "Udemy is a global learning marketplace featuring thousands of courses on computer science, data science, and engineering. Users can learn software development, artificial intelligence, and cybersecurity with expert-led video tutorials. The app offers lifetime access to purchased courses, downloadable materials, and certificates of completion for self-paced learning.",
+    "size": 102,
+    "reviews": "2.5M",
+    "ratingAvg": 4.5,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 24000 },
+      { "name": "2 star", "count": 17000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 2100000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/28QDHJJH/geeksforgeeks.png",
+    "title": "GeeksforGeeks",
+    "companyName": "GeeksforGeeks",
+    "id": 4,
+    "description": "The GeeksforGeeks app is designed for computer science students and professionals preparing for technical interviews. It offers structured learning paths in Data Structures, Algorithms, Operating Systems, and DBMS, along with coding problems and mock tests. Learners can practice coding challenges, read articles, and watch tutorial videos for skill enhancement.",
+    "size": 48,
+    "reviews": "210K",
+    "ratingAvg": 4.7,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 176500 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/HLC8qfsg/programiz.webp",
+    "title": "Programiz",
+    "companyName": "Programiz",
+    "id": 5,
+    "description": "Programiz offers a beginner-friendly approach to learning Python programming with step-by-step tutorials, examples, and interactive practice exercises. The app covers topics from variables to object-oriented programming, making it perfect for students and aspiring developers. Offline mode and quizzes make it a great on-the-go learning companion.",
+    "size": 42,
+    "reviews": "180K",
+    "ratingAvg": 4.8,
+    "downloads": "1M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 161700 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/vBKYsVLX/leetcode.jpg",
+    "title": "LeetCode",
+    "companyName": "LeetCode",
+    "id": 6,
+    "description": "LeetCode is the ultimate platform for software engineers to practice coding problems and prepare for technical interviews. It features algorithm challenges, company-specific interview questions, and contests. Users can write code in multiple languages, discuss solutions with others, and track their progress across problem categories like dynamic programming and graphs.",
+    "size": 59,
+    "reviews": "310K",
+    "ratingAvg": 4.8,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 23000 },
+      { "name": "5 star", "count": 279200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/MG4nqHwG/khanacademy.png",
+    "title": "Khan Academy",
+    "companyName": "Khan Academy",
+    "id": 7,
+    "description": "Khan Academy provides a free world-class education for anyone, anywhere. It offers in-depth lessons in computer science, algorithms, and mathematics, with interactive exercises and videos. Ideal for students at all levels, the app includes progress tracking, personalized learning paths, and hands-on programming practice through visual coding.",
+    "size": 78,
+    "reviews": "900K",
+    "ratingAvg": 4.9,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 820500 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/KvJvmj7s/w3school.png",
+    "title": "W3Schools",
+    "companyName": "W3Schools",
+    "id": 8,
+    "description": "The W3Schools app provides easy-to-understand tutorials on web development technologies such as HTML, CSS, JavaScript, React, and SQL. It includes interactive editors for trying code directly, quizzes for self-assessment, and offline access for continuous learning. Perfect for computer science students and front-end developers.",
+    "size": 53,
+    "reviews": "140K",
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 21000 },
+      { "name": "5 star", "count": 112900 }
+    ]
+  },
+
+  {
+    "image": "https://i.postimg.cc/9fThwQTH/github.png",
+    "title": "GitHub",
+    "companyName": "GitHub, Inc.",
+    "id": 9,
+    "description": "GitHub is the most popular platform for version control and collaborative software development. It allows users to host repositories, contribute to open-source projects, and manage workflows through Git integration. Students and professionals can explore millions of public projects, learn from others’ code, and use GitHub Classroom for educational collaboration.",
+    "size": 68,
+    "reviews": "950K",
+    "ratingAvg": 4.8,
+    "downloads":"50M",
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 75000 },
+      { "name": "5 star", "count": 844000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/DzcxNV3G/grasshopper.png",
+    "title": "Grasshopper",
+    "companyName": "Google LLC",
+    "id": 10,
+    "description": "Grasshopper teaches beginners to code using interactive puzzles and visual programming lessons. Designed by Google, it simplifies complex programming concepts through animations and gamified learning. Learners can practice real JavaScript syntax and gradually progress from basic to intermediate coding skills with immediate feedback.",
+    "size": 41,
+    "reviews": "400K",
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 3500 },
+      { "name": "2 star", "count": 2800 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 48000 },
+      { "name": "5 star", "count": 337700 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/R0GTRcw7/stackoverflow.png",
+    "title": "Stack Overflow",
+    "companyName": "Stack Exchange",
+    "id": 11,
+    "description": "Stack Overflow is the largest online Q&A platform for programmers and computer science learners. Users can ask coding-related questions, explore millions of answers, and share knowledge with developers around the world. The app supports offline reading and bookmarking, making it a must-have resource for problem-solving and learning best practices.",
+    "size": 55,
+    "reviews": "520K",
+    "ratingAvg": 4.6,
+    "downloads": "10K",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 4200 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 441800 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/Hk9Nq8Qj/codingninjas.png",
+    "title": "Coding Ninjas",
+    "companyName": "Coding Ninjas India Pvt. Ltd.",
+    "id": 12,
+    "description": "Coding Ninjas provides structured learning paths for aspiring software engineers and data scientists. The app includes high-quality courses in C++, Java, Machine Learning, and Web Development. It offers coding challenges, interview preparation modules, and community discussions to strengthen your computer science foundation.",
+    "size": 63,
+    "reviews": "170K",
+    "ratingAvg": 4.8,
+    "downloads": "1M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 147400 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/brRbyPLT/datacamp.png",
+    "title": "DataCamp",
+    "companyName": "DataCamp Inc.",
+    "id": 13,
+    "description": "DataCamp offers an interactive way to learn data science, statistics, and machine learning. With hands-on coding exercises in Python, R, and SQL, users gain real-world analytical skills. The app’s guided projects and bite-sized lessons make complex topics accessible, empowering learners to become proficient data professionals.",
+    "size": 77,
+    "reviews": "380K",
+    "ratingAvg": 4.7,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 5500 },
+      { "name": "4 star", "count": 42000 },
+      { "name": "5 star", "count": 329800 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/hGxX4gtC/edx.png",
+    "title": "edX",
+    "companyName": "edX Inc.",
+    "id": 14,
+    "description": "edX: Online Courses by MIT & Harvard. edX provides high-quality university-level courses from top institutions like MIT, Harvard, and Stanford. Learners can explore computer science, AI, cybersecurity, and software engineering. The app supports flexible schedules, quizzes, and certificates to enhance career growth and knowledge in emerging technologies.",
+    "size": 96,
+    "reviews": "920K",
+    "ratingAvg": 4.6,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 6500 },
+      { "name": "3 star", "count": 14000 },
+      { "name": "4 star", "count": 110000 },
+      { "name": "5 star", "count": 781500 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/85zgKB9M/pluralsight.png",
+    "title": "Pluralsight",
+    "companyName": "Pluralsight LLC",
+    "id": 15,
+    "description": "Pluralsight offers expert-led video courses for software developers, IT admins, and data professionals. With skill assessments and personalized learning paths, it helps users master tools like Python, React, and AWS. The app also includes hands-on labs to practice coding and build professional-level expertise.",
+    "size": 82,
+    "reviews": "260K",
+    "ratingAvg": 4.5,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 215800 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/6TsSXdjj/hacker-Rank.jpg",
+    "title": "HackerRank",
+    "companyName": "HackerRank",
+    "id": 16,
+    "description": "HackerRank helps programmers practice competitive coding and prepare for technical interviews. It includes thousands of algorithmic challenges, interview kits, and coding competitions. The app allows users to submit solutions in multiple languages and compete on leaderboards, making learning exciting and rewarding.",
+    "size": 58,
+    "reviews": "490K",
+    "ratingAvg": 4.8,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 41000 },
+      { "name": "5 star", "count": 437700 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/vHrMmBWJ/freecodecamp.png",
+    "title": "freeCodeCamp",
+    "companyName": "freeCodeCamp.org",
+    "id": 17,
+    "description": "freeCodeCamp is a nonprofit platform offering free, in-depth tutorials and coding certifications. Learners can study web development, data visualization, and machine learning with project-based lessons. The community forum and GitHub integration allow learners to collaborate and showcase their work to employers.",
+    "size": 70,
+    "reviews": "150K",
+    "ratingAvg": 4.9,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 132500 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/3Nj63kP9/mimo.webp",
+    "title": "Mimo",
+    "companyName": "Mimohello GmbH",
+    "id": 18,
+    "description": "Mimo offers a fun and interactive way to learn coding on your phone. Through real coding exercises and daily streaks, users can master HTML, Python, and JavaScript step by step. Its gamified interface motivates consistency, while the mini projects help learners build practical, deployable skills.",
+    "size": 45,
+    "reviews": "560K",
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 473000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/kgGjpYXh/kaggle.png",
+    "title": "Kaggle",
+    "companyName": "Google LLC",
+    "id": 19,
+    "description": "Kaggle is a global platform for data science competitions and learning. Users can analyze datasets, collaborate in notebooks, and participate in real-world AI challenges. It’s an ideal space for computer science learners to practice ML, share ideas, and build a strong data science portfolio.",
+    "size": 81,
+    "reviews": "200K",
+    "ratingAvg": 4.9,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 17000 },
+      { "name": "5 star", "count": 178200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/zvMLXfK3/replit.webp",
+    "title": "Replit",
+    "companyName": "Replit Inc.",
+    "id": 20,
+    "description": "Replit lets users code, compile, and deploy projects directly from their browser or phone. It supports dozens of programming languages and offers real-time collaboration, making it perfect for students and developers alike. The app includes templates, version control, and hosting for full-stack applications.",
+    "size": 64,
+    "reviews": "220K",
+    "ratingAvg": 4.7,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 182000 }
+    ]
+  }
+]
