@@ -24,7 +24,7 @@ export const updateInstallData = () => {
 };
 
 // uninstall app
-export const uninstallData = id => {
+export const uninstallData = (id) => {
   const loadData = loadInstallData();
 
   try {
