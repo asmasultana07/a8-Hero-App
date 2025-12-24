@@ -11,9 +11,9 @@ const Banner = () => {
           <h1 className="text-4xl md:text-7xl text-bb font-bold">
             We Build
             <span className="text-[#632EE3]">
-              <br /> Productive
+              <br /> Productive 
             </span>
-             Apps
+              Apps
           </h1>
           <p className="text-pp md:w-100 lg:w-200">
             At HERO.IO, we craft innovative apps designed to make everyday life
@@ -22,12 +22,15 @@ const Banner = () => {
           </p>
         </div>
         <div className="mb-6 flex gap-4 justify-center items-center ">
-          <button class="btn bg-white text-black border-[#632EE3]">
+          <a className="btn bg-white text-black border-[#632EE3] flex items-center gap-2"
+             href="https://play.google.com/store/apps?hl=en_IN" target="_blank" >
             <img src={googlePlayStore} alt="" className="w-5 h-4" />
-            Google Play
-          </button>
+            <span>Google Play</span>
+          </a> 
+           
           {/* <!-- Microsoft --> */}
-          <button class="btn bg-white text-black border-[#632EE3]">
+          <a className="btn bg-white text-black border-[#632EE3] flex items-center gap-2" 
+            href="https://apps.microsoft.com/apps?hl=en-US&gl=US" target="_blank" >
             <svg
               aria-label="Microsoft logo"
               width="16"
@@ -40,8 +43,9 @@ const Banner = () => {
               <path d="M96 265H247V416H96" fill="#3ca4ef"></path>
               <path d="M265 265H416V416H265" fill="#f9ba00"></path>
             </svg>
-            Microsoft App Store
-          </button>
+            <span>Microsoft App Store</span>
+          </a>
+            
         </div>
         <div className="flex justify-center items-center">
           <img src={heroImage} alt="" />
@@ -53,19 +57,19 @@ const Banner = () => {
         
           <div class="md:stats shadow mt-10 gap-20">
             <div class="stat place-items-center gap-4">
-              <div class="stat-title text-white">Total Downloads</div>
+              <div class="stat-title text-white text-[14px]">Total Downloads</div>
               <div class="stat-value text-white md:text-6xl">29.6M</div>
               <div class="stat-desc text-white">21% more than last month</div>
             </div>
 
             <div class="stat place-items-center gap-4">
-              <div class="stat-title text-white">Total Reviews</div>
+              <div class="stat-title text-white text-[14px]">Total Reviews</div>
               <div class="stat-value text-secondary text-white md:text-6xl">906K</div>
               <div class="stat-desc text-secondary text-white">46% more than last month</div>
             </div>
 
             <div class="stat place-items-center gap-4">
-              <div class="stat-title text-white">Active Apps</div>
+              <div class="stat-title text-white text-[14px]">Active Apps</div>
               <div class="stat-value text-white md:text-6xl">132+</div>
               <div class="stat-desc text-white">31 more will Launch</div>
             </div>

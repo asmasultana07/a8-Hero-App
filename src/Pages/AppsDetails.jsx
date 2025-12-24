@@ -15,6 +15,8 @@ const AppsDetails = () => {
   const [isInstall, setIsInstall] = useState(false);
 
   const app = apps.find((a) => a.id === Number(id));
+  
+
   const { image, title, companyName, ratingAvg, downloads, description, size, reviews, ratings } = app || {};
   
   useEffect(() =>  {
@@ -30,7 +32,7 @@ const AppsDetails = () => {
   const handleInstallBtn = (id) => {
     updateInstallData(id);
     setIsInstall(true);
-    toast.success(`${title} Installed Successfully!`);  
+    toast.success(`Yahoo! ${title} Installed Successfully!`);  
   }
 
   
@@ -90,7 +92,7 @@ const AppsDetails = () => {
 
       {/* describe */}
       <div>
-        <h2 className="text-bb text-2xl font-semibold">Description</h2>
+        <h2 className="text-bb text-2xl mt-4 font-semibold">Description</h2>
         <p className="text-pp ">{description}</p>
       </div>
       

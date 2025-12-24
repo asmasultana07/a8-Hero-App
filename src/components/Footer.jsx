@@ -44,7 +44,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-        <p>Copyright © 2025 - All right reserved by Hero Apps Industries Ltd</p>
+        <p>Copyright © 2025 - All right reserved by Hero Apps Industries Ltd.</p>
       </div>
     </footer>
   );
