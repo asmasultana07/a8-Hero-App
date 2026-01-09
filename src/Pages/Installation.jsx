@@ -1,6 +1,6 @@
 import React, {  useState } from "react"
 import useApps from "../hooks/useApps";
-import { loadInstallData, uninstallData } from "../utils/localStorage";
+import { loadInstallData } from "../utils/localStorage";
 import LoadingSpinner from "../components/LoadingSpinner";
 import InstallApps from "../components/InstallApps";
 
@@ -11,6 +11,10 @@ const Installation = () => {
     const { apps, loading } = useApps();
     if (loading) return (  <LoadingSpinner />);    
 
+
+    // fillter install apps
+    const installData = apps.filter(app => installList.includes(app.id));
+    
     const sortedApps = () => {
         let sortedData = [...installList];
         if (sortOrder === "High-Low") return sortedData.sort((a, b) => b.downloads - a.downloads);
@@ -18,11 +22,7 @@ const Installation = () => {
         return sortedData;
     };
 
-    // const handleUninstallBtn = (id) => {
-    //     uninstallData(id)
-    //     const updatedData = loadInstallData();
-    //     setInstallList(updatedData);
-    // }
+    
 
 
     return (
@@ -56,7 +56,7 @@ const Installation = () => {
 
                     {/* // installed apps list  */}
                     <div>
-                        {sortedApps().map((app) => (
+                        {sortedApps.map((app) => (
                             <InstallApps key={app.id} app={app}></InstallApps>
 
                         ))}
