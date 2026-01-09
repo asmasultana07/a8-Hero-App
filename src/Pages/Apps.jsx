@@ -4,11 +4,13 @@ import useApps from "../hooks/useApps";
 import { FaSearch } from "react-icons/fa";
 import errorAppImage from '../assets/App-Error.png'
 import { Link } from "react-router";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Apps = () => {
-  const { apps } = useApps();
+  const { apps, loading } = useApps();
   const [search, setSearch] = useState("");
   // const [isSearching, setIsSearching] = useState(false);
+   if (loading) return (  <LoadingSpinner />);
 
   const term = search.trim().toLocaleLowerCase();
   const searchApps = term

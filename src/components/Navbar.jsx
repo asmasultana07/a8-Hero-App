@@ -2,6 +2,7 @@ import React from "react";
 import logoImage from "../assets/logo.png";
 import { Link,NavLink } from 'react-router';
 import { FaGithub } from 'react-icons/fa';
+import ThemeToggle from "./ThemeToggle";
 
 
 
@@ -43,17 +44,17 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to="/"> 
+                <NavLink to="/" className={getNavActive}>  
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/"> 
+                <NavLink to="/apps" className={getNavActive}> 
                   Apps
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/"> 
+               <NavLink to="/installation" className={getNavActive}> 
                       Installation
                 </NavLink>
               </li>
@@ -81,11 +82,15 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-end">
-          <a href="https://github.com/asmasultana07" target="_blank" 
+        <div className="navbar-end  gap-3">
+         <div className="navbar-end  hidden lg:flex">
+           <a href="https://github.com/asmasultana07" target="_blank" 
           className="rounded-md text-white text-[16px]  btn 
                                 bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:from-pink-500 hover:to-purple-500"> 
           <FaGithub />Contribute</a>
+         </div>
+          
+          <ThemeToggle className=" navbar-end hidden  sm:flex ml-3" />
         </div>
       </div>
     </nav>

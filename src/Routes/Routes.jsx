@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <Installation />,
       },
       {
-        path: "/app/:id",
+        path: "/apps/:id",
         element: <AppsDetails />,
       },
 
@@ -39,3 +39,5 @@ const router = createBrowserRouter([
 ]);
 
 export default router;
+
+

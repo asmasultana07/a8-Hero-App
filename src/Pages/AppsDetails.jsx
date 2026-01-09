@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import downloadImg from "../assets/icon-downloads.png";
 import ratingImg from "../assets/icon-ratings.png";
@@ -7,6 +7,7 @@ import reviewImg from "../assets/icon-review.png";
 import { loadInstallData, updateInstallData } from "../utils/localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import RatingChart from "../components/RatingChart";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const AppsDetails = () => {
   const { id } = useParams();
@@ -14,22 +15,21 @@ const AppsDetails = () => {
   // console.log(apps)
   const [isInstall, setIsInstall] = useState(false);
 
-  const app = apps.find((a) => a.id === Number(id));
-  
-
+  const app = apps.find((app) => app.id === Number(id));
   const { image, title, companyName, ratingAvg, downloads, description, size, reviews, ratings } = app || {};
   
   useEffect(() =>  {
     const loadData = loadInstallData();
-    const ifInstalled = loadData.some(a => a.id === app.id);
+    const ifInstalled = loadData.some(app => app ===Number(id))
     if(ifInstalled) 
       setIsInstall(true);
-  }, []
+      toast.warn(`${title} already Installed!`);
+  }, [id]
   );
 
-  if (loading) return <p>Loading........</p>;
+  if (loading) return (  <LoadingSpinner />);
 
-  const handleInstallBtn = (id) => {
+  const handleInstallBtn = () => {
     updateInstallData(id);
     setIsInstall(true);
     toast.success(`Yahoo! ${title} Installed Successfully!`);  
@@ -77,9 +77,9 @@ const AppsDetails = () => {
               </div>
             </div>
             <div>
-              <button className="bg-[#00D390] text-white font-semibold px-6 py-2 rounded-sm mt-4"
-              disabled={isInstall} onClick={() => handleInstallBtn(id)}>
-                { isInstall ? 'Installed' : `Install Now (${size}MB)` }
+              <button className="bg-[#00D390] text-white font-semibold btn text-xl rounded-sm mt-4"
+              disabled={isInstall} onClick={handleInstallBtn}>
+                { isInstall ? 'Installed' : `Install Now (${size}MB)`}
               <ToastContainer />
               </button>
             </div>

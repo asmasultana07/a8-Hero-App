@@ -10,13 +10,13 @@ export const loadInstallData = () => {
 };
 
 // save app to installation 
-export const updateInstallData = () => {
+export const updateInstallData = (id) => {
     const loadData = loadInstallData();
 
   try {
-    const isDuplicate = loadData.some(a => a.id === app.id)
+    const isDuplicate = loadData.includes(id);
     if (isDuplicate) return;
-    const updateData = JSON.stringify([...loadData, app])
+    const updateData = JSON.stringify([...loadData, id])
     localStorage.setItem('installed', updateData)
   } catch (err) {
     console.log(err)
@@ -28,7 +28,7 @@ export const uninstallData = (id) => {
   const loadData = loadInstallData();
 
   try {
-    const uninstalled = loadData.filter(a => a.id !== id)
+    const uninstalled = loadData.filter(data => data !== id)
     localStorage.setItem('installed', JSON.stringify(uninstalled))
   } catch (err) {
     console.log(err)

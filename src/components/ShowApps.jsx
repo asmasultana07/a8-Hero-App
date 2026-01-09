@@ -8,7 +8,7 @@ const ShowApps = ({ app }) => {
   
   
     return (
-    <Link to={`/app/${id}`}>
+    <Link to={`/apps/${id}`}>
     <div className="card bg-base-100 shadow-sm rounded-xl p-4 hover:scale-105 transition ease-in-out">
       <figure className=" ">
         <img src={image} alt="image loading" className="bg-[#D9D9D9] rounded-xl h-50 w-full object-cover"/>

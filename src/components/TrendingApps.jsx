@@ -2,14 +2,15 @@ import React from "react"
 import useApps from "../hooks/useApps"
 import { Link } from "react-router";
 import ShowApps from "./ShowApps";
+import LoadingSpinner from "./LoadingSpinner";
 
 const TrendingApps = () => {
 
-    const { apps } = useApps();
+    const { apps,loading } = useApps();
     const showApps = apps.slice(0,8);
     
     // console.log(apps);
-
+     if (loading) return (  <LoadingSpinner />);
 
     return (
         //  {/* Trending Apps */}

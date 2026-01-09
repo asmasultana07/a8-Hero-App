@@ -4,7 +4,7 @@ import heroImage from "../assets/hero.png";
 
 const Banner = () => {
   return (
-    <section className="">
+    <section>
       {/* Banner */}
       <div className="bg-[#f3f3f3] flex flex-col gap-5 px-10 md:px-20">
         <div className="mt-10 flex flex-col justify-center items-center text-center gap-6">
