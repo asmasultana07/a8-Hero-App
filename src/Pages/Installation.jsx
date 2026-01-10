@@ -1,11 +1,13 @@
 import React, {  useState } from "react"
 import useApps from "../hooks/useApps";
-import { loadInstallData } from "../utils/localStorage";
+import { loadInstallData, uninstallData } from "../utils/localStorage";
 import LoadingSpinner from "../components/LoadingSpinner";
 import InstallApps from "../components/InstallApps";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Installation = () => {
-    const [installList, setInstallList] = useState(loadInstallData);
+    const [installList, setInstallList] = useState(() => loadInstallData());
     const [sortOrder, setSortOrder] = useState('none');
 
     const { apps, loading } = useApps();
@@ -14,6 +16,12 @@ const Installation = () => {
 
     // fillter install apps
     const installData = apps.filter(app => installList.includes(app.id));
+
+    const handleUninstall = (id, title) => {
+        uninstallData(id);
+        setInstallList(prev => prev.filter(appId => appId !== id));
+        toast.success(`${title} has been uninstalled.`);
+    };
     
     const toDownloads = (value) => {
         if (!value) return 0;
@@ -28,24 +36,17 @@ const Installation = () => {
     const sortedApps = () => {
         let sortedData = [...installData];
        if (sortOrder === "High-Low") {
-        console.log(sortedData, "high to low");
+        // console.log(sortedData, "high to low");
                 return  sortedData.sort((a, b) => toDownloads(b.downloads) - toDownloads(a.downloads));
        } else if (sortOrder === "Low-High") {
-        console.log(sortedData, "low to high");
+        // console.log(sortedData, "low to high");
                  return sortedData.sort((a, b) => toDownloads(a.downloads) - toDownloads(b.downloads));
        } else {
-        console.log(sortedData, "none");
+        // console.log(sortedData, "none");
         return sortedData;
        }
-
-
     }
-    // const sortedApps = () => {
-    //     let sortedData = [...installData];
-    //     if (sortOrder === "High-Low") return sortedData.sort((a, b) => b.downloads - a.downloads);
-    //     if (sortOrder === "Low-High") return sortedData.sort((a, b) => a.downloads - b.downloads);
-    //     return sortedData;
-    // };
+    
 
     
 
@@ -65,7 +66,7 @@ const Installation = () => {
                     <div className="mb-2 flex justify-between items-center">
                         <h3>
                             <span className="font-medium text-bb text-lg md:text-xl">
-                                ({sortedApps().length}) Apps Installed
+                                ({sortedApps().length} {sortedApps().length === 1 ? 'App Installed' : 'Apps Installed'})
                             </span>
                         </h3>
                     
@@ -83,13 +84,13 @@ const Installation = () => {
                     <div>
                         {sortedApps().length > 0 
                         ? (sortedApps().map((app) => (
-                            <InstallApps key={app.id} app={app}></InstallApps>
-
+                            <InstallApps key={app.id} app={app} onUninstall={handleUninstall} />
                         )))
                         : <p className="mt-20 text-pp text-center text-xl md:text-3xl">No apps installed.</p>}
                     </div>
 
                 </div>
+                <ToastContainer />
             
         </div>
     )

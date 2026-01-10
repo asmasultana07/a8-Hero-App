@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { LuArrowDownToLine } from "react-icons/lu";
 import { LuStar } from "react-icons/lu";
-import { loadInstallData, uninstallData } from "../utils/localStorage"; 
-import { toast } from "react-toastify";
+ 
 
-const InstallApps = ({ app }) => {
+const InstallApps = ({ app, onUninstall }) => {
     const { image, title, id, ratingAvg, size, downloads} = app;
-    const [installList, setInstallList] = useState(loadInstallData);
-
-    const handleRemove = (id) => {
-      uninstallData(id)
-      const updatedData = loadInstallData();
-      setInstallList(updatedData)
-      toast.success(` ${title} has been uninstalled.. `)
-    }
+  
   
   
     return (
@@ -32,7 +24,7 @@ const InstallApps = ({ app }) => {
                                     </div>
                                 </div>
                               </div>
-                                <button onClick={() => handleRemove(id)}
+                                <button onClick={() => onUninstall?.(id, title)}
                                   className="bg-red-500 text-white font-semibold btn text-xl rounded-md p-4 mb-2 sm:mb-0">
                                     Uninstall
                                 </button>
