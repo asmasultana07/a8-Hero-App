@@ -8,28 +8,35 @@ import { loadInstallData, updateInstallData } from "../utils/localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import RatingChart from "../components/RatingChart";
 import LoadingSpinner from "../components/LoadingSpinner";
+import "react-toastify/dist/ReactToastify.css";
 
 const AppsDetails = () => {
-  const { id } = useParams();
   const { apps, loading } = useApps();
   // console.log(apps)
   const [isInstall, setIsInstall] = useState(false);
 
-  const app = apps.find((app) => app.id === Number(id));
-  const { image, title, companyName, ratingAvg, downloads, description, size, reviews, ratings } = app || {};
+  const params = useParams();
+  const paramsId = Number(params.id);
+
+  const app = apps.find((app) => app.id === paramsId);
+  const { id, image, title, companyName, ratingAvg, downloads, description, size, reviews, ratings } = app || {};
   
   useEffect(() =>  {
     const loadData = loadInstallData();
-    const ifInstalled = loadData.some(app => app ===Number(id))
-    if(ifInstalled) 
+    const ifInstalled = loadData?.includes(paramsId);
+    if(ifInstalled) {
       setIsInstall(true);
-      toast.warn(`${title} already Installed!`);
-  }, [id]
+    }
+  }, [paramsId]
   );
 
   if (loading) return (  <LoadingSpinner />);
 
-  const handleInstallBtn = () => {
+  const handleInstallBtn = (id) => {
+    if(isInstall){
+      toast.warn(`${title} already Installed!`);
+      return;
+    }
     updateInstallData(id);
     setIsInstall(true);
     toast.success(`Yahoo! ${title} Installed Successfully!`);  
@@ -78,7 +85,7 @@ const AppsDetails = () => {
             </div>
             <div>
               <button className="bg-[#00D390] text-white font-semibold btn text-xl rounded-sm mt-4"
-              disabled={isInstall} onClick={handleInstallBtn}>
+               onClick={ ()=> handleInstallBtn(id)}>
                 { isInstall ? 'Installed' : `Install Now (${size}MB)`}
               <ToastContainer />
               </button>

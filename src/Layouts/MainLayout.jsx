@@ -1,11 +1,18 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { Outlet, useNavigation } from "react-router"
+import { Outlet, useLocation, useNavigation } from "react-router"
 import LoadingSpinner from "../components/LoadingSpinner"
+import { useEffect } from "react"
 
 const MainLayout = () => {
     const navigation = useNavigation()
-    console.log(navigation.state)
+    const location =useLocation();
+    // console.log(navigation.state)
+    
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
+
     
     return (
     <div className="flex flex-col min-h-screen">

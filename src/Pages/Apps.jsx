@@ -8,9 +8,10 @@ import LoadingSpinner from "../components/LoadingSpinner";
 
 const Apps = () => {
   const { apps, loading } = useApps();
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   // const [isSearching, setIsSearching] = useState(false);
-   if (loading) return (  <LoadingSpinner />);
+  
+  if (loading) return (  <LoadingSpinner />);
 
   const term = search.trim().toLocaleLowerCase();
   const searchApps = term
@@ -31,7 +32,7 @@ const Apps = () => {
       <div className="flex justify-between items-center">
         <h3>
           <span className="font-semibold text-bb text-lg md:text-xl">
-            ({searchApps.length}) Apps Found
+            ( {searchApps.length} {searchApps.length === 1 ? 'App Found' : 'Apps Found'})
           </span>
         </h3>
         <label className="bg-white shadow flex items-center gap-2 p-2 rounded-sm">

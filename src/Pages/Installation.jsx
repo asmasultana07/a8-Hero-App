@@ -15,12 +15,37 @@ const Installation = () => {
     // fillter install apps
     const installData = apps.filter(app => installList.includes(app.id));
     
-    const sortedApps = () => {
-        let sortedData = [...installList];
-        if (sortOrder === "High-Low") return sortedData.sort((a, b) => b.downloads - a.downloads);
-        if (sortOrder === "Low-High") return sortedData.sort((a, b) => a.downloads - b.downloads);
-        return sortedData;
+    const toDownloads = (value) => {
+        if (!value) return 0;
+        const str = String(value).trim().toUpperCase();
+        let num = parseFloat(str);
+        if (str.endsWith('B')) num *= 1e9;
+        else if (str.endsWith('M')) num *= 1e6;
+        else if (str.endsWith('K')) num *= 1e3;
+        return num;
     };
+    
+    const sortedApps = () => {
+        let sortedData = [...installData];
+       if (sortOrder === "High-Low") {
+        console.log(sortedData, "high to low");
+                return  sortedData.sort((a, b) => toDownloads(b.downloads) - toDownloads(a.downloads));
+       } else if (sortOrder === "Low-High") {
+        console.log(sortedData, "low to high");
+                 return sortedData.sort((a, b) => toDownloads(a.downloads) - toDownloads(b.downloads));
+       } else {
+        console.log(sortedData, "none");
+        return sortedData;
+       }
+
+
+    }
+    // const sortedApps = () => {
+    //     let sortedData = [...installData];
+    //     if (sortOrder === "High-Low") return sortedData.sort((a, b) => b.downloads - a.downloads);
+    //     if (sortOrder === "Low-High") return sortedData.sort((a, b) => a.downloads - b.downloads);
+    //     return sortedData;
+    // };
 
     
 
@@ -40,7 +65,7 @@ const Installation = () => {
                     <div className="mb-2 flex justify-between items-center">
                         <h3>
                             <span className="font-medium text-bb text-lg md:text-xl">
-                                ({sortedApps.length}) Apps Installed
+                                ({sortedApps().length}) Apps Installed
                             </span>
                         </h3>
                     
@@ -56,10 +81,12 @@ const Installation = () => {
 
                     {/* // installed apps list  */}
                     <div>
-                        {sortedApps.map((app) => (
+                        {sortedApps().length > 0 
+                        ? (sortedApps().map((app) => (
                             <InstallApps key={app.id} app={app}></InstallApps>
 
-                        ))}
+                        )))
+                        : <p className="mt-20 text-pp text-center text-xl md:text-3xl">No apps installed.</p>}
                     </div>
 
                 </div>

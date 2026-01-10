@@ -18,8 +18,8 @@ export const updateInstallData = (id) => {
     if (isDuplicate) return;
     const updateData = JSON.stringify([...loadData, id])
     localStorage.setItem('installed', updateData)
-  } catch (err) {
-    console.log(err)
+  } catch (error) {
+    console.log(error)
   }
 };
 
@@ -28,9 +28,9 @@ export const uninstallData = (id) => {
   const loadData = loadInstallData();
 
   try {
-    const uninstalled = loadData.filter(data => data !== id)
+    const uninstalled = loadData.filter((data) => data !== id)
     localStorage.setItem('installed', JSON.stringify(uninstalled))
-  } catch (err) {
-    console.log(err)
+  } catch (error) {
+    console.log(error)
   }
 };
