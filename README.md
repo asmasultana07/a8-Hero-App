@@ -1,4 +1,4 @@
-# <img src="./assets/logo.png" width=40> AppifyZone 
+#  📱 AppifyZone 
 
 > AppifyZone, – App Discovery & Installation Platform, builds a modern React-based web application that allows users to **discover, explore, install, and manage apps** through an intuitive and responsive interface.
 >   - 📂 GitHub Repository : https://github.com/asmasultana07/a8-Hero-App
@@ -43,4 +43,5 @@
 | **Storage**                | Local Storage       |
 | **Version Ctrl**           | Git, GitHub       |
 | **Deployment**             | Netlify       |
+
 
