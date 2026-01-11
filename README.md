@@ -1,8 +1,8 @@
 # <img src="./assets/logo.png" width=40> AppifyZone 
 
 > AppifyZone, – App Discovery & Installation Platform, builds a modern React-based web application that allows users to **discover, explore, install, and manage apps** through an intuitive and responsive interface.
->   - 📂 GitHub Repository : 
->   - 🌐 Live Link :  
+>   - 📂 GitHub Repository : https://github.com/asmasultana07/a8-Hero-App
+>   - 🌐 Live Link :  https://a08-appifyzone.netlify.app/
 ---
 ---
 ## 🔗 Key Overview
@@ -33,13 +33,14 @@
 
 ## ⚙️ Technology Stack
 
-| Layer                  | Technology                    |
-|--------------          |-------------------------------|
-| Frontend               | React.js              |
-| Programming language   | JavaScript (ES6+)  |
-| Routing                | React Router DOM     |
-| Visual Chart           | Recharts      |
-| State Management       | React Hooks      |
-| Storage                | Local Storage       |
-| Version Ctrl           | Git, GitHub       |
-| Deployment             | Netlify       |
+| Layer                      | Technology                    |
+|--------------              |-------------------------------|
+| **Frontend**               | React.js              |
+| **Programming language**   | JavaScript (ES6+)  |
+| **Routing**                | React Router DOM     |
+| **Visual Chart**           | Recharts      |
+| **State Management**       | React Hooks      |
+| **Storage**                | Local Storage       |
+| **Version Ctrl**           | Git, GitHub       |
+| **Deployment**             | Netlify       |
+
